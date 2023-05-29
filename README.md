@@ -1,2 +1,2 @@
-# DSA
-This repositary i have made just to keep secure my DSA learnings as well as code .
+# Coding-100
+This repositary i have made just to keep secure my DSA learnings, WebDev Proj as well as many other codes .
