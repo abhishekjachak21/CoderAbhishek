@@ -5,7 +5,8 @@ using namespace std ;
 ///copyCons of 1st object
 
 class mobile{
-  int ram,battery;
+  int ram;
+  int battery;
   string name,processor;
 
   public :
