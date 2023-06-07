@@ -6,7 +6,8 @@ using namespace std ;
 
 class mobile{
   int ram,battery;
-  string name,processor;
+  string name;
+  string processor;
 
   public :
 
