@@ -2,7 +2,7 @@
 using namespace std ;
 
 ///----------------------------------
-///copyCons of 1st obj
+///copyCons of 1st object
 
 class mobile{
   int ram,battery;
