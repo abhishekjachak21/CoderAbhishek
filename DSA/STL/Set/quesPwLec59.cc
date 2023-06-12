@@ -4,6 +4,8 @@ using namespace std;
 
 
 /*
+//Q=> check if all alphabets are present
+
 bool checkAllAlphabetes(string s){
 
 if(s.size()<26) return false;
