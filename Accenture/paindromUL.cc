@@ -1,30 +1,34 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int reverse (int);
+bool isPalindrome(int num) {
+    
+    int originalNum = num;
+    int reversedNum = 0;
 
-int main (){
+    while (num > 0) {
+        int digit = num % 10;
+        reversedNum = reversedNum * 10 + digit;
+        num /= 10;
+    }
 
-  int i, f, l;
-  cout << "Enter lower limit: "; cin >> f;
-  cout << "Enter upper limit: "; cin >> l;
-
-  for (i = f; i <= l; i++)
-    if (i == reverse (i)) cout << i << " ";
-  cout<<endl;  
-
-  return 0;
+    return originalNum == reversedNum;
 }
 
-int reverse (int a){
+int main() {
+    int lowerLimit, upperLimit;
 
-  int n = 0, d = 0, rev = 0;
-  n = a;
-  while (n != 0)
-    {
-      d = n % 10;
-      rev = rev * 10 + d;
-      n = n / 10;
+    cout << "Enter lower limit: ";
+    cin >> lowerLimit;
+
+    cout << "Enter upper limit: ";
+    cin >> upperLimit;
+
+    for (int num = lowerLimit; num <= upperLimit; num++) {
+        if (isPalindrome(num)) {
+            cout << num << " ";
+        }
     }
-  return rev;
+
+    return 0;
 }

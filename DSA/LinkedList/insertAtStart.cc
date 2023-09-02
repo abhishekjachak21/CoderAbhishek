@@ -29,7 +29,7 @@ void print(Node* head){
     cout<<"NULL"<<endl;
 }
 
-int main(){
+/* int main(){
  
   Node* head=new Node(2);
  
@@ -52,6 +52,23 @@ int main(){
  print(head);
 
  insAtStart(head,000000);
+ print(head);
+   
+
+} */
+
+//starting from nothing
+int main(){
+ 
+ Node* head=NULL;
+
+ insAtStart(head,15);
+ print(head);
+
+ insAtStart(head,10);
+ print(head);
+
+ insAtStart(head,5);
  print(head);
    
 
