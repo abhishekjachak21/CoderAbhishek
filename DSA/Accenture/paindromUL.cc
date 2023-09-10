@@ -1,18 +1,86 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-bool hasIdenticalDigits(int num) {
-    int lastDigit = num % 10;
-    int temp = num / 10;
 
-    while (temp > 0) {
-        int digit = temp % 10;
-        if (digit != lastDigit)
-            return false;
-        temp /= 10;
+//code using function
+bool palin(int n){
+   
+    int original=n;
+    int rev=0,num;
+
+    while(n>0){
+        num = n%10 ;
+        rev = rev*10 + num;
+        n /= 10;
     }
 
-    return true;
+    if(rev==original) cout<<"Yes!its pailindrome\n";
+    else cout<<"No!its not palindrome\n";
+
+    return 0;  //int,bool,float ko return stat is need
+}
+
+int main(){
+
+  int t;cin>>t;
+  while(t--){
+    int n;cin>>n;
+    palin(n);
+  }
+
+    return 0;
+}
+
+
+
+
+//simple code
+/* int main(){
+
+    int n;cin>>n;
+    int original=n;
+    int rev=0,num;
+
+    while(n>0){
+        num = n%10 ;
+        rev = rev*10 + num;
+        n /= 10;
+    }
+
+    if(rev==original) cout<<"Yes!its pailindrome\n";
+    else cout<<"No!its not palindrome\n";
+
+    return 0;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #include <iostream>
+using namespace std;
+
+bool isPalindrome(int num) {
+    
+    int originalNum = num;
+    int reversedNum = 0;
+
+    while (num > 0) {
+        int digit = num % 10;
+        reversedNum = reversedNum * 10 + digit;
+        num /= 10;
+    }
+
+    return originalNum == reversedNum;
 }
 
 int main() {
@@ -25,10 +93,11 @@ int main() {
     cin >> upperLimit;
 
     for (int num = lowerLimit; num <= upperLimit; num++) {
-        if (hasIdenticalDigits(num)) {
+        if (isPalindrome(num)) {
             cout << num << " ";
         }
     }
 
     return 0;
 }
+ */
