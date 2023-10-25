@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Login page</title>
+</head>
+<body>
+    <p>Enter username: </p>
+    <input type="text" placeholder="entr username">
+    <p>Enter password:</p>
+    <input type="password" placeholder="pass...">
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        #login-form{
+           height: 200px;
+           width: 200px;
+           margin: 200px;
+           background-color:  aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <form id="login-form" action="your-server-endpoint" method="post">
+        <h1>Login</h1>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+        <button id="butt" type="submit">Log In</button>
+    </form>
+    <script>
+       
+      const buttun = document.getElementById('butt');
+
+        buttun.addEventListener('click',myFun);
+
+        function myFun(){
+            document.body.style.backgroundColor = 'black';
+        }
+    </script>
+</body>
+</html>
