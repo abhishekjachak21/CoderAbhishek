@@ -4,7 +4,13 @@
 			"path": "."
 		},
 		{
-			"path": "../JavaCoding"
+			"path": "../WEBDEV"
+		},
+		{
+			"path": "../Projects"
+		},
+		{
+			"path": "../JavaaCodes"
 		}
 	],
 	"settings": {
@@ -98,6 +104,6 @@
 			"variant": "cpp"
 		},
 		"liveServer.settings.port": 5501,
-		"liveServer.settings.multiRootWorkspaceName": "CODING"
+		"liveServer.settings.multiRootWorkspaceName": "WEBDEV"
 	}
 }
