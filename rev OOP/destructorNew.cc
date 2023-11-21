@@ -2,8 +2,8 @@
 using namespace std;
 
 class myPran{
-//    static int count=0; //wrong bro
-   static int count; //wrong bro
+//    static int count=0; //wrong bro,dont declare
+   static int count; 
    public:
    myPran(){
     count++;
