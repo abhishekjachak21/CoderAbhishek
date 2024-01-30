@@ -24,3 +24,10 @@ int main() {
     }
     return 0;
 }
+// git add .
+// git commit -m"new add"
+
+// git push dssa main
+// git push OOPA main
+// git push codingabhi main
+// git push webd main
