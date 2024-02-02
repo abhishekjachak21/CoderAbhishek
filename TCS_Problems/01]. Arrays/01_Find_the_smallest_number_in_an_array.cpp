@@ -39,7 +39,7 @@ int getSmallest(vector<int>v){
 }
 
 int main(){
-    vector<int>v1 = {23, 24, 53, 7, 14, 456, 755};
+    vector<int>v1 = {23,22, 24, 53, 7, 14, 456, 755};
     vector<int>v2 = {11, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
     cout<<getSmallest(v1)<<endl;

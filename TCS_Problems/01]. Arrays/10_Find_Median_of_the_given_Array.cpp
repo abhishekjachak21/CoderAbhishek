@@ -16,20 +16,22 @@ Output: 3.5
 #include<bits/stdc++.h>
 using namespace std;
 
+
 void getMedian(int arr[], int n){
     double median=0;
     sort(arr, arr+n);
 
     if(n%2==0){
-        cout<<(double)(arr[(n/2)]+arr[(n/2)-1])/2;
+        cout<<(double)(arr[(n/2)]  +  arr[(n/2)-1]) /2;   //need to understand deeply, th + pr
     }
     else{
         cout<<arr[(n/2)+1];
     }
+    cout<<endl;
 }
 
 int main(){
-    int arr[] = {2,5,1,7};
+    int arr[] = {1,2,3,4,5,6,7,8,9,10,11};
     int n = sizeof(arr)/sizeof(arr[0]);
     cout<<"The median of the array is: ";
     getMedian(arr,n);

@@ -18,17 +18,26 @@ Explanation: Since the order of elements gets reversed the first element will oc
 #include <iostream>
 using namespace std;
 
-void reverseArray(int arr[], int n){
-    int i=0, j=n-1;
-    while(i<j){
-        swap(arr[i], arr[j]);
-        i++,j--;
-    }
+// void reverseArray(int arr[], int n){
+//     int i=0, j=n-1;
+//     while(i<j){
+//         swap(arr[i], arr[j]);
+//         i++,j--;
+//     }
 
-    for(int i=0; i<n; i++) 
+//     for(int i=0; i<n; i++) 
+//         cout<<arr[i]<<" ";
+//     cout<<endl;
+// }
+
+
+void reverseArray(int arr[],int n){
+    
+    for(int i=n-1;i>=0;i--){
         cout<<arr[i]<<" ";
-    cout<<endl;
+    }
 }
+
 
 int main() {
    int n = 5;

@@ -27,23 +27,69 @@ Explanation: 2 occurs 3 times in the array
 using namespace std;
 
 ///------------------------------------------------------------------
-///here is the final correct
-int main(){
+///here on 30Jan 2024 (2nd way)
+// int main(){
+    
 
-    int arr[]={2,9,7,1,5,2,7,3,1,9,4,4,4,4,4,4,4,4,9};
-    int size=sizeof(arr)/sizeof(arr[0]);
-    
+
+
+// }
+///------------------------------------------------------------------
+
+
+
+///------------------------------------------------------------------
+///here on 30Jan 2024 (1st way)
+int main(){
+    int arr[]={2,1,7,9,5,5,9,1,7,2,2,3};
+    int n=sizeof(arr)/sizeof(arr[0]);
+
     unordered_map<int,int>mp;
-    
-    for(int i=0;i<size;i++){
-       mp[arr[i]]++;
+
+    for(int i=n-1;i>=0;i--){
+        mp[arr[i]]++;
     }
-   
-    for(auto idx:mp){
-        cout<<idx.first<<" for "<<idx.second<<" times"<<endl;
+
+    for(auto i:mp){
+        cout<<i.first<<" -> "<<i.second<<" times"<<endl;
     }
-    return 0;
 }
+///------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///------------------------------------------------------------------
+///here is the final correct
+// int main(){
+
+//     int arr[]={2,9,7,1,5,2,7,3,1,9,4,4,4,4,4,4,4,4,9};
+//     int size=sizeof(arr)/sizeof(arr[0]);
+    
+//     unordered_map<int,int>mp;
+    
+//     for(int i=0;i<size;i++){
+//        mp[arr[i]]++;
+//     }
+   
+//     for(auto idx:mp){
+//         cout<<idx.first<<" for "<<idx.second<<" times"<<endl;
+//     }
+//     return 0;
+// }
 ///---------------------------------------------------------------------
 
 
