@@ -8,16 +8,14 @@ int main()
     cin >> n;
 
    while(n!=0){
-   
         n=n/10;
         sum++;
-    
-    
    }
 //    cout<< " sum : "<< dig <<endl ;
    cout<< " sum : "<< sum <<endl ;
     return 0;
 }
+
 
 // #include <iostream>
 // using namespace std;

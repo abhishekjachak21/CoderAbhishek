@@ -32,8 +32,10 @@ void getMedian(int arr[], int n){
 
 int main(){
     int arr[] = {1,2,3,4,5,6,7,8,9,10,11};
+    int arr2[] = {10,30,20,40};
     int n = sizeof(arr)/sizeof(arr[0]);
-    cout<<"The median of the array is: ";
-    getMedian(arr,n);
+    int n2 = sizeof(arr2)/sizeof(arr2[0]);
+    cout<<"The median of the array is: ";getMedian(arr,n);
+    cout<<"The median of the array is: ";getMedian(arr2,n2);
     return 0;
 }
