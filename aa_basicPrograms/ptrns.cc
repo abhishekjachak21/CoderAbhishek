@@ -223,23 +223,23 @@ still it is a wrong for long num*/
   212121212  below pgm op
   121212121
   212121212*/
-// int main()
-// {
-//     int n,m;
-//     cout<<"n and m: "<<endl ; cin>>n>>m;
+int main()
+{
+    int n,m;
+    cout<<"n and m: "<<endl ; cin>>n>>m;
 
-//     for(int i=1;i<=n;i++){
-//         for(int j=1;j<=m;j++)
-//         {
-//             if(i%2!=0)
-//           cout<<"12";
-//            else
-//            cout<<"21";
-//         }
-//         cout << endl ;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=m;j++)
+        {
+            if(i%2!=0)
+          cout<<"12";
+           else
+           cout<<"21";
+        }
+        cout << endl ;
 
-//     }
-// }
+    }
+}
 
 
 
@@ -289,19 +289,19 @@ still it is a wrong for long num*/
 
 
 ////Numerical rectangular pattern
-int main()
-{
- int n;
- cout<<"n: ";cin>>n;
+// int main()
+// {
+//  int n;
+//  cout<<"n: ";cin>>n;
 
- for(int i=1;i<=n;i++){
-  for(int j=i;j<=n;j++)
-    cout << j;
-  cout << endl ;
- }
- return 0;
-//abcs is  
-}   
+//  for(int i=1;i<=n;i++){
+//   for(int j=i;j<=n;j++)
+//     cout << j;
+//   cout << endl ;
+//  }
+//  return 0;
+// //abcs is  
+// }   
 
 
 ////two-side rectangular pattern

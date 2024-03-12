@@ -23,7 +23,7 @@ int palindromeOrAscii(string str) {       // Check if the string is a palindrome
         }
     }
 
-    if (isPalindrome) return n;   // If the string is a palindrome, return its length
+    if (isPalindrome==1) return n;   // If the string is a palindrome, return its length
     else  return int(str[0]);    // If the string is not a palindrome, return the ASCII value of the first character
     
 }
@@ -31,9 +31,9 @@ int palindromeOrAscii(string str) {       // Check if the string is a palindrome
 
 
 int main() {
-    string str;
-    cout << "Enter a string: ";
-    cin >> str;
+ 
+    cout << "Enter your string: ";
+    string str; cin >> str;
 
     int result = palindromeOrAscii(str);
     cout << "Result: " << result << endl;
