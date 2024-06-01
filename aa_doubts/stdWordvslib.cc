@@ -1,5 +1,5 @@
 #include <iostream>
-// using namespace std;
+using namespace std;
 
 // User-defined function named "size"
 int size() {
