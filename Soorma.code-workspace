@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../FTend/ReactJS"
+		},
+		{
+			"path": "../FTend/JavaScript"
+		},
+		{
+			"path": "../DSA"
+		},
+		{
+			"path": "../Projects/HAPPY_DEPLOYED_PROJ"
+		}
+	],
+	"settings": {}
+}
