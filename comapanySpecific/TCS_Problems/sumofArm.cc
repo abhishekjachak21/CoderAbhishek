@@ -2,31 +2,27 @@
 #include <cmath>
 using namespace std;
 
-// Function to calculate the number of digits
-int countDigits(int n) {
-    if (n == 0)
-        return 0;
-    return 1 + countDigits(n / 10);
-}
+#include <iostream>
+#include <cmath> // for pow()
+using namespace std;
 
-// Recursive function to calculate the sum of digits each raised to the power of 'power'
-int armstrongHelper(int n, int power) {
-    if (n == 0)
-        return 0;
-    int digit = n % 10;
-    return pow(digit, power) + armstrongHelper(n / 10, power);
-}
-
-// Function to check if a number is an Armstrong number
 bool isArmstrong(int n) {
-    int power = countDigits(n);
-    return n == armstrongHelper(n, power);
+    int originalNumber = n;
+    int sum = 0;
+    int numDigits = log10(n) + 1;
+
+    while (n != 0) {
+        int digit = n % 10;
+        sum += pow(digit, numDigits);
+        n /= 10;
+    }
+
+    return (sum == originalNumber);
 }
 
-// Function to find the sum of Armstrong numbers between a given range
-int sumOfArmstrongNumbers(int lower, int higher) {
+int sumOfArmstrongNumbers(int a, int b) {
     int sum = 0;
-    for (int i = lower; i <= higher; ++i) {
+    for (int i = a; i <= b; i++) {
         if (isArmstrong(i)) {
             sum += i;
         }
@@ -46,3 +42,38 @@ int main() {
 
     return 0;
 }
+
+
+
+
+// Function to calculate the number of digits
+// int countDigits(int n) {
+//     if (n == 0)
+//         return 0;
+//     return 1 + countDigits(n / 10);
+// }
+
+// // Recursive function to calculate the sum of digits each raised to the power of 'power'
+// int armstrongHelper(int n, int power) {
+//     if (n == 0)
+//         return 0;
+//     int digit = n % 10;
+//     return pow(digit, power) + armstrongHelper(n / 10, power);
+// }
+
+// // Function to check if a number is an Armstrong number
+// bool isArmstrong(int n) {
+//     int power = countDigits(n);
+//     return n == armstrongHelper(n, power);
+// }
+
+// // Function to find the sum of Armstrong numbers between a given range
+// int sumOfArmstrongNumbers(int lower, int higher) {
+//     int sum = 0;
+//     for (int i = lower; i <= higher; ++i) {
+//         if (isArmstrong(i)) {
+//             sum += i;
+//         }
+//     }
+//     return sum;
+// }
